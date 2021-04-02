@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interior</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="logo" width="184" height="21" />
+      <form action="#" class="search-form">
+        <input type="text" class="search-field" />
+        <button class="btn-search" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <button id="btn-cart" class="btn btn-cart" type="button">cart</button>
+    </header>
+    <main>
+      <div class="products"></div>
+      <div class="cart-container">
+        <header>
+          <img src="images/logo.svg" alt="logo" width="184" height="21" />
+
+          <button id="close-cart" class="btn btn-back" type="button">
+            back
+          </button>
+        </header>
+        <div class="cart"></div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+html,
+body {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  background-color: #807c71;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 65px 40px 65px;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+.btn {
+  width: 100px;
+  height: 30px;
+  outline: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.btn-cart {
+  background-color: transparent;
+  font-size: 24px;
+}
+.btn-back {
+  font-size: 24px;
+}
+
+.btn-cart:hover {
+  color: rgb(163, 163, 145);
+}
+
+.buy-btn,
+.btn-back {
+  background-color: #807c71;
+  border-radius: 12px;
+}
+
+.buy-btn:hover,
+.btn-back:hover {
+  color: rgb(163, 163, 145);
+}
+
+h3 {
+  width: 100%;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  margin-bottom: 0.2rem;
+}
+
+span {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.product-item {
+  color: #413003;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-right: 15px;
+}
+
+.products,
+.cart {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 50px 70px 50px 70px;
+}
+
+.cart {
+  justify-content: flex-start;
+}
+
+.cart-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.cart-container.open {
+  opacity: 1;
+  z-index: 1000;
+  background-color: #fff;
+}
+
+.cart-item {
+  margin-bottom: 15px;
+  margin-right: 15px;
+  color: #413003;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  width: 270px;
+  min-height: 400px;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+  margin-right: 35px;
+}
+
+.del-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  background-color: #f12222;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.cart-item-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+.btn-search {
+  background-color: transparent;
+  border: none;
+  color: #fafafa;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+.search-form {
+  position: relative;
+  margin-right: 50px;
+  display: inline-block;
+}
+.search-field:focus {
+  outline: none;
+}
+.search-field {
+  box-sizing: border-box;
+  width: 200px;
+  color: #fafafa;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fafafa;
+}
+.invisible {
+  display: none;
+}
